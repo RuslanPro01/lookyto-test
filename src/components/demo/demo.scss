@@ -1,0 +1,16 @@
+@import "../../../public/style/css-variables/demo";
+
+.demo {
+  position: relative;
+  width: $demo-width;
+  height: $demo-height;
+  margin: 0 auto;
+}
+
+.wizard {
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  left: 0;
+  transition: left 0.05s linear;
+}

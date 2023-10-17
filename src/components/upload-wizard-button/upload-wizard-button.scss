@@ -1,0 +1,21 @@
+@import "public/style/css-variables/_common";
+
+.overlay__upload {
+  font-size: 20px;
+  display: flex;
+  align-self: center;
+  height: 100%;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  color: $primary-button-color;
+
+  background-color: $primary-button-background-color;
+
+  &:hover {
+    background-color: lighten($primary-button-background-color, 2%);
+  }
+
+  &:active {
+    background-color: darken($primary-button-background-color, 2%);
+  }
+}

@@ -1,0 +1,62 @@
+@import "public/style/css-variables/_common";
+
+@font-face {
+  font-family: "PT Mono";
+  src: url("fonts/PT-Mono/PTMonoRegular.woff") format("woff");
+  font-weight: normal;
+}
+
+html,
+body {
+  padding: 0;
+
+  min-width: 1024px;
+  margin: 0 auto;
+
+  font: 20px "PT Mono";
+  color: #ffffff;
+
+  background: #da641a;
+}
+
+button {
+  font-family: "PT Mono", sans-serif;
+  cursor: pointer;
+  font-size: $primary-button-font-size;
+  transition: background-color 0.2s ease-in-out;
+}
+
+h1,
+h2 {
+  text-align: center;
+  text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.72);
+}
+
+*[tabindex]:focus, button:focus, input:focus {
+  outline: none;
+  box-shadow: 0 0 10px #fff000;
+}
+
+form {
+  margin-bottom: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.section-title {
+  position: relative;
+
+  height: 52px;
+
+  text-indent: -1000em;
+}
+
+.section-title img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  transform: translateX(-50%);
+}

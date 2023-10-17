@@ -1,0 +1,36 @@
+@import "public/style/css-variables/overlay";
+
+.tab, .tabs__controller {
+  display: none;
+  background-color: darken($primary-background-color, 10%);
+  padding: 1%;
+  margin-left: 1%;
+}
+
+.tabs_active {
+  background-color: darken($primary-background-color, 10%);
+  color: #000000;
+  font-weight: bold;
+  text-decoration: underline;
+  padding: 0 1%;
+}
+
+.tabs__controllers {
+  display: flex;
+  justify-content: space-around;
+}
+
+.controller-base:checked ~ .tab-base,
+.controller-skills:checked ~ .tab-skills {
+  display: block;
+}
+
+.tabs__label {
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+

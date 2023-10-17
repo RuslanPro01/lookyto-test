@@ -1,0 +1,23 @@
+import { StoreInterface } from '../interfaces/store.interface.ts';
+
+export const getName = (state: StoreInterface) => state.name;
+export const getStrength = (state: StoreInterface) => state.baseSkills.strength.level;
+export const getAgility = (state: StoreInterface) => state.baseSkills.agility.level;
+export const getIntelligence = (state: StoreInterface) => state.baseSkills.intelligence.level;
+export const getCharm = (state: StoreInterface) => state.baseSkills.charm.level;
+export const getVitality = (state: StoreInterface) => state.baseSkills.vitality.level;
+export const getEvasion = (state: StoreInterface) => state.baseSkills.evasion.level;
+export const getVigor = (state: StoreInterface) => state.baseSkills.vigor.level;
+export const getAttack = (state: StoreInterface) => state.additionalSkills.attack.level;
+export const getStealth = (state: StoreInterface) => state.additionalSkills.stealth.level;
+export const getArchery = (state: StoreInterface) => state.additionalSkills.archery.level;
+export const getTeachability = (state: StoreInterface) => state.additionalSkills.teachability.level;
+export const getSurvival = (state: StoreInterface) => state.additionalSkills.survival.level;
+export const getMedicine = (state: StoreInterface) => state.additionalSkills.medicine.level;
+export const getIntimidation = (state: StoreInterface) => state.additionalSkills.intimidation.level;
+export const getInsight = (state: StoreInterface) => state.additionalSkills.insight.level;
+export const getAppearance = (state: StoreInterface) => state.additionalSkills.appearance.level;
+export const getManipulation = (state: StoreInterface) => state.additionalSkills.manipulation.level;
+export const getAllData = (state: StoreInterface) => state;
+export const getBaseSkills = (state: StoreInterface) => state.baseSkills;
+export const getAdditionalSkills = (state: StoreInterface) => state.additionalSkills;

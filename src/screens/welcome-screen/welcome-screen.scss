@@ -1,0 +1,81 @@
+.header {
+  position: relative;
+  padding-top: 80px;
+  text-align: center;
+  border-bottom: solid 8px #1cb34d;
+  background: #2b5cfc;
+  background: linear-gradient(180deg, #0000ff, #94c6fd);
+}
+
+.header-clouds {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 363px;
+  background: url('img/clouds.png') top center repeat-x;
+}
+
+.header-title {
+  height: 101px;
+  margin-bottom: 30px;
+}
+
+.header-clouds {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  height: 363px;
+
+  background: url("img/clouds.png") top center repeat-x;
+}
+
+.header-fence {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+
+  left: 50%;
+  width: 91px;
+  height: 48px;
+  margin-left: -400px;
+
+  background: url("img/fence.gif") no-repeat;
+}
+
+.header-tree {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+
+  width: 120px;
+  height: 137px;
+  margin-left: 300px;
+
+  background: url("img/tree.gif") no-repeat;
+}
+
+.header-title {
+  font-size: 69px;
+  position: relative;
+
+  z-index: 1;
+  margin: 0 0 28px;
+
+  padding: 0;
+}
+
+.header-description {
+  font-size: 20px;
+  line-height: 1.5;
+
+  position: relative;
+  z-index: 1;
+
+  width: 620px;
+  margin: 0 auto;
+}

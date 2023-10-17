@@ -1,0 +1,21 @@
+.parametersButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  cursor: pointer;
+  transition: filter 0.2s ease-in-out;
+  border: none;
+  background-color: transparent;
+  background-image: url("img/settings.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  filter: invert(1);
+
+  &:hover {
+    filter: invert(0.7);
+  }
+}
