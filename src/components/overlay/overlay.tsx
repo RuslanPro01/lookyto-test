@@ -41,7 +41,7 @@ export default function Overlay({ onCloseButtonClick }: OverlayProps) {
         <button className="overlay__close" title="Закрыть парметры персонажа" onClick={onCloseButtonClick}>х</button>
       </div>
       <div className="overlay__other">
-        <img src="img/wizard.svg" alt="wizard" className="overlay__image" width="180px" height="245px"/>
+        <img src="../../../public/img/wizard.svg" alt="wizard" className="overlay__image" width="180px" height="245px"/>
         <Tabs/>
       </div>
       <footer className="overlay__footer">

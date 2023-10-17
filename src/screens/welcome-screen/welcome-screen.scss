@@ -14,7 +14,7 @@
   right: 0;
   left: 0;
   height: 363px;
-  background: url('img/clouds.png') top center repeat-x;
+  background: url('../../assets/clouds.png') top center repeat-x;
 }
 
 .header-title {
@@ -31,7 +31,7 @@
 
   height: 363px;
 
-  background: url("img/clouds.png") top center repeat-x;
+  background: url("../../assets/clouds.png") top center repeat-x;
 }
 
 .header-fence {
@@ -44,7 +44,7 @@
   height: 48px;
   margin-left: -400px;
 
-  background: url("img/fence.gif") no-repeat;
+  background: url("../../../public/img/fence.gif") no-repeat;
 }
 
 .header-tree {
@@ -56,7 +56,7 @@
   height: 137px;
   margin-left: 300px;
 
-  background: url("img/tree.gif") no-repeat;
+  background: url("../../../public/img/tree.gif") no-repeat;
 }
 
 .header-title {

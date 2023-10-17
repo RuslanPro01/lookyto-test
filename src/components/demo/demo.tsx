@@ -60,8 +60,8 @@ export default function Demo() {
       <section className="demo">
         <Lives lives={lives}/>
         <ParametersButton onButtonClick={handlerParametersButtonClick}/>
-        {lives > BaseSkillLevel.MIN && (<img className="wizard" src="img/wizard.gif" alt="wizzard" height={`${Wizard.HEIGHT}px`}
-                        width={`${Wizard.WIDTH}px`} style={{ left: `${wizardLeft}px`, transform: `scaleX(${wizardScaleX})` }}/>)}
+        {lives > BaseSkillLevel.MIN && (<img className="wizard" src="../../../public/img/wizard.gif" alt="wizzard" height={`${Wizard.HEIGHT}px`}
+                                             width={`${Wizard.WIDTH}px`} style={{ left: `${wizardLeft}px`, transform: `scaleX(${wizardScaleX})` }}/>)}
         <DamageButton lives={lives}/>
       </section>
     </>

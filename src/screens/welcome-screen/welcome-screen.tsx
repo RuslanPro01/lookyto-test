@@ -12,7 +12,7 @@ export default function WelcomeScreen() {
       <div className="header-tree"></div>
       <h1 className="header-title section-title">
         Code and Magick
-        <img src="img/title-site.png" alt="Code and magick"/>
+        <img src="../../../public/img/title-site.png" alt="Code and magick"/>
       </h1>
       <p className="header-description">
         Это игра, где главного героя, которым вам предстоит управлять и изменять заклинаниями окружающий мир зовут
