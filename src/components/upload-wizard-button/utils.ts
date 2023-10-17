@@ -33,7 +33,7 @@ export function getWizardDataValidateErrors(data: StoreInterface) {
       }),
       vitality: Joi.object({
         title: Joi.string().valid(initBaseSkills.vitality.title),
-        level: Joi.number().valid(baseSkills.strength.level + BaseSkillsIncrements.VITALITY),
+        level: Joi.number().min(BaseSkillLevel.MIN).max(baseSkills.strength.level + BaseSkillsIncrements.VITALITY),
         editable: Joi.boolean().valid(initBaseSkills.vitality.editable),
       }),
       evasion: Joi.object({
