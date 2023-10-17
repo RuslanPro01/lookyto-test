@@ -1,27 +1,36 @@
-# React + TypeScript + Vite
+# Code And Magic
+Это игра, в которой вам предстоит управлять главным героем по имени Пендальф Синий и изменять заклинаниями окружающий мир. Вместе с Пендальфом вас ждет увлекательное приключение...
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Описание
+Цель проекта - продемонстрировать навыки разработчика. Главное здесь - чистый и читабельный код, а также работа с данными.
 
-Currently, two official plugins are available:
+# Стек проета
+1. Фреймворк: React 
+2. Язык программирования: TypeScript
+3. Стили: SCSS
+4. Данные: Redux Toolkit и Redux
+5. Валидация: Joi
+6. Инструменты разработки: Vite
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Возможности
+1. Вы можете управлять персонажем в пределах демо поля используя стрелки **враво** и **влево**.
+2. Пользователь может экспортировать своего персонажа
+3. Пользователь может импортировать своего персонажа
+4. Пользователь может управлять скиллами своего персонажа и менять ему имя
+5. Персонаж может получить урок при нажатии на кнопку "Авада Кедавра!", жизненная сила после урона не восстановится.
+Персонаж пропадет с поля если Жизненная сила станет равна 0
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+# Запуск проекта
+1. Установка зависимостей
+```bash
+npm install
+```
+2. Запуск в dev mode
+```bash
+npm run dev
+```
+3. Запуск в prod mode
+```bash
+npm run build
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
