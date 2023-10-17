@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { initialState } from '../constants/state.ts';
-import { BaseSkillsIncrements } from '../constants/base-skills.ts';
+import { BaseSkillLevel, BaseSkillsIncrements } from '../constants/base-skills.ts';
 import { StoreInterface } from '../interfaces/store.interface.ts';
 import { merge } from 'lodash';
 
@@ -24,7 +24,10 @@ export const UserProcess = createSlice({
       state.baseSkills.charm.level = action.payload;
     },
     changeVitality(state, action: PayloadAction<number>) {
-      state.baseSkills.vitality.level  += action.payload > 1 ? 1 : action.payload;
+      state.baseSkills.vitality.level  += action.payload > 1 ? 1 : action.payload < -1 ? -1 : action.payload;
+      if (state.baseSkills.vitality.level < BaseSkillLevel.MIN) {
+        state.baseSkills.vitality.level = BaseSkillLevel.MIN;
+      }
     },
     damageVitality(state, action: PayloadAction<number>) {
       state.baseSkills.vitality.level -= action.payload;

@@ -53,7 +53,7 @@ export default function ParameterComponent({ title, editable, level, skillName, 
   const additionalSkills = useAppSelector(getAdditionalSkills);
   const [ levelNumber, setLevel ] = useState(level);
   const dispatch = useAppDispatch();
-
+  let isIncrement = true;
   const updateLevel = (level: number) => {
     if (skillName !== 'vigor') {
       const action = actionMap[skillName];
@@ -62,7 +62,12 @@ export default function ParameterComponent({ title, editable, level, skillName, 
       }
 
       if (skillName === 'strength') {
-        dispatch(changeVitality(level));
+        if (isIncrement) {
+          dispatch(changeVitality(1));
+        }
+        if (!isIncrement) {
+          dispatch(changeVitality(-1));
+        }
       }
 
       if (skillName === 'agility') {
@@ -122,6 +127,7 @@ export default function ParameterComponent({ title, editable, level, skillName, 
 
   const increaseLevel = () => {
     if (level < BaseSkillLevel.MAX) {
+      isIncrement = true;
       const newValue  = levelNumber + 1;
       setLevel(newValue);
       updateLevel(newValue);
@@ -130,6 +136,7 @@ export default function ParameterComponent({ title, editable, level, skillName, 
 
   const decreaseLevel = () => {
     if (level > BaseSkillLevel.MIN) {
+      isIncrement = false;
       const newValue = levelNumber - 1;
       setLevel(newValue);
       updateLevel(newValue);
